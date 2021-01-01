@@ -1,0 +1,88 @@
+html,body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  width:100%;
+  height:100vh;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: Roboto, sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  height:auto;
+  padding-bottom: 50px;
+}
+
+.gif-generator-title{
+  font-family: 'Bungee Outline', cursive;
+  font-size: 2.5em;
+  letter-spacing: 1.5px;
+  width:100%;
+  text-align: center;
+}
+
+.search{
+  border-radius:25px;
+  border:1px solid rgb(206, 206, 206);
+  color:#333;
+  font-size: 1em;
+  padding:10px 15px;
+  width:50%;
+  margin:0 auto;
+}
+
+.search-btn{
+  border-radius:5px;
+  border:none;
+  color:rgb(128, 128, 128);
+  cursor:pointer;
+  font-size: medium;
+  padding:10px 15px;
+  width:20%;
+  margin:20px auto 0;
+}
+
+.form-gifs{
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  margin:0 auto;
+}
+
+.gifs{
+  display: flex;
+  flex-direction: column-reverse;
+  margin:auto;
+  padding-top:20px;
+  width: 25%;
+}
+
+.input-error{
+  border:1px solid#ff0000;
+  background-color: rgb(255,0,0,0.2);
+  display:none;
+  font-size: 14px;
+  text-align:center;
+  margin:15px auto;
+  width:45%;
+}
+
+.gif{
+  max-width: 100%;
+  width:100%;
+}
+
+@media(max-width:768px){
+  .search,.search-btn,.form-gifs{
+    min-width:80%;
+  }
+
+  .gifs{
+    width:60%;
+  }
+}
+
